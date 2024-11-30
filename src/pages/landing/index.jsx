@@ -23,7 +23,11 @@ const Landing = () => {
                     <div className='w-full lg:w-1/2 px-[4%] lg:px-0 lg:pl-[8%] pt-[8%]'>
                         <h1 className='text-[40px] lg:text-[58px] tracking-wider'>DESTROY <br />DICK DECEMBER</h1>
 
-                        <div className='h-[60px] w-full lg:w-fit px-2 lg:px-8 border-[2px] border-r-[7px] border-b-[7px] border-black rounded-[4px] mt-[40px] lg:mt-[80px] flex justify-center items-center gap-3 text-[15px] lg:text-[26px]'><p>CA: D63ET7yusuwygywgyjffas6yugswiw7</p> <img src={copy} alt="" /></div>
+                        <div className='h-[60px] w-full lg:w-fit px-2 lg:px-8 border-[2px] border-r-[7px] border-b-[7px] border-black rounded-[4px] mt-[40px] lg:mt-[80px] flex justify-center items-center gap-3 text-[15px] lg:text-[26px]'><p>CA: D63ET7yusuwygywgyjffas6yugswiw7</p> <img src={copy} alt="" className='cursor-pointer' onClick={() => {
+                            navigator.clipboard.writeText(
+                                "D63ET7yusuwygywgyjffas6yugswiw7"
+                            );
+                        }} /></div>
                     </div>
                     <div className='w-full lg:w-1/2 flex justify-end items-end flex-col'>
                         <div className='flex justify-center pr-[15%] items-center w-full'>
