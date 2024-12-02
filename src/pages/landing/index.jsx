@@ -5,6 +5,7 @@ import cal from '../../assets/cal.png'
 import img from '../../assets/img.png'
 import copy from '../../assets/copy.png'
 import Slider from '../../components/Slider'
+import { Link } from 'react-router-dom'
 
 const Landing = () => {
     return (
@@ -14,8 +15,8 @@ const Landing = () => {
                     <button className="border-[2px] border-black rounded-[5px] py-[6px] lg:py-[10px] px-[20px] lg:px-[50px] font-sigmar text-black bg-secondary transform transition-transform duration-300 ease-in-out scale-100 hover:scale-110 text-[20px]">Buy Now</button>
 
                     <div className='flex justify-end items-center gap-1 lg:gap-4'>
-                        <img src={tg} alt="" className='w-[30px] h-[30px] lg:w-auto lg:h-auto' />
-                        <img src={x} alt="" className='w-[30px] h-[30px] lg:w-auto lg:h-auto' />
+                        <Link to={'https://t.me/DDDonSol'}><img src={tg} alt="" className='w-[30px] h-[30px] lg:w-auto lg:h-auto' /></Link>
+                        <Link to={'http://x.com/ddd_onsol'}><img src={x} alt="" className='w-[30px] h-[30px] lg:w-auto lg:h-auto' /></Link>
                         <img src={dex} alt="" className='w-[30px] h-[30px] lg:w-auto lg:h-auto' />
                     </div>
                 </div>
@@ -23,9 +24,9 @@ const Landing = () => {
                     <div className='w-full lg:w-1/2 px-[4%] lg:px-0 lg:pl-[8%] pt-[8%]'>
                         <h1 className='text-[40px] lg:text-[58px] tracking-wider'>DESTROY <br />DICK DECEMBER</h1>
 
-                        <div className='h-[60px] w-full lg:w-fit px-2 lg:px-8 border-[2px] border-r-[7px] border-b-[7px] border-black rounded-[4px] mt-[40px] lg:mt-[80px] flex justify-center items-center gap-3 text-[15px] lg:text-[26px]'><p>CA: D63ET7yusuwygywgyjffas6yugswiw7</p> <img src={copy} alt="" className='cursor-pointer' onClick={() => {
+                        <div className='h-[60px] w-full lg:w-[60%] px-2 lg:px-8 border-[2px] border-r-[7px] border-b-[7px] border-black rounded-[4px] mt-[40px] lg:mt-[80px] flex justify-center items-center gap-3 text-[15px] lg:text-[26px]'><p>CA: </p> <img src={copy} alt="" className='cursor-pointer' onClick={() => {
                             navigator.clipboard.writeText(
-                                "D63ET7yusuwygywgyjffas6yugswiw7"
+                                ""
                             );
                         }} /></div>
                     </div>
